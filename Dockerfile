@@ -1,5 +1,7 @@
 FROM resin/raspberrypi3-python:2.7
 
+ENV INITSYSTEM on
+
 # Install dependencies needed for building and running OpenCV
 RUN apt-get update && apt-get install -y --no-install-recommends \
     # to build and install
